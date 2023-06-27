@@ -1,0 +1,16 @@
+---
+- summary: |
+    Поиск товара по ключевому слову
+  status: fail
+
+- summary: |
+    Поиск товара по категории
+  status: pass
+
+- summary: |
+     Фильтр товаров по бренду
+  status: pass
+
+- summary: |
+     Фильтр товаров по цене
+  status: pass
