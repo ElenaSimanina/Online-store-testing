@@ -1,10 +1,10 @@
 ---
 - summary: |
-    Поиск товара по ключевому слову
+     Поиск товара по ключевому слову
   status: fail
 
 - summary: |
-    Поиск товара по категории
+     Поиск товара по категории
   status: pass
 
 - summary: |
@@ -14,20 +14,20 @@
 - summary: |
      Фильтр товаров по цене
   status: pass
-
-  - summary: |
+  
+- summary: |
      Просмотр товаров
   status: pass
 
-  - summary: |
+- summary: |
      Просмотр подробной информации о товаре
   status: pass
 
-  - summary: 
+- summary: 
      Добавление товара в корзину
   status: pass
 
-  - summary:
+- summary:
      Просмотр содержимого корзины
-   status: pass
+  status: pass
 
