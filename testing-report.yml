@@ -59,15 +59,15 @@
      Выбор максимальной цены товара
   status: fail
 
-summary: |
+- summary: |
      Ввод цены товара
   status: fail
 
-summary: |
+- summary: |
      Удаление товаров из корзины
   status: fail
 
-summary: |
+- summary: |
      Просмотр дополнительных фото товаров
   status: pass
   
