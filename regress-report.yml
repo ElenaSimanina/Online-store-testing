@@ -65,7 +65,8 @@ test-cases:
      Фильтр товаров по бренду
    status: pass
 
-bugreports: []
+bugreports: 
+     []
 
 test-cases:
   - summary: |
@@ -76,7 +77,8 @@ test-cases:
      Фильтр товаров по цене
    status: pass
        
-bugreports: []
+bugreports: 
+     []
 
 test-cases:
   - summary: |
@@ -87,7 +89,8 @@ test-cases:
      Просмотр товаров
    status: pass
        
-bugreports: []
+bugreports: 
+     []
 
 test-cases:
   - summary: |
@@ -98,7 +101,8 @@ test-cases:
      Просмотр подробной информации о товаре 
    status: pass
        
-bugreports: []
+bugreports: 
+     []
 
 test-cases:
   - summary: |
@@ -109,7 +113,8 @@ test-cases:
      Добавление товара в корзину 
    status: pass
        
-bugreports: []
+bugreports: 
+     []
 
 test-cases:
   - summary: |
@@ -120,4 +125,4 @@ test-cases:
      Просмотр содержимого корзины
    status: pass
        
-bugreports: []
+bugreports:  []
