@@ -1,0 +1,116 @@
+test-cases:
+  - summary: |
+     Поиск товара по ключевому слову 
+    status: fail
+
+  - summary: |
+      Поиск товара по ключевому слову
+    status: fail
+
+bugreports:
+  - summary: |
+      При вводе ключевого слова отображаются только товары, находящиеся на первой странице магазина
+    environment: |
+      Google Chrome   Версия 114.0.5735.199 (Официальная сборка), (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: |
+     1. Зайти на страницу сайта https://hexlet-products-store.vercel.app/ Хекслет Магазин
+     2. Набрать в поле поиска ключевое слово, например, телефон
+    expected-result: |
+      На странице магазина отображается список товаров, в названии или описании которых содержится ключевое слово
+    actual-result: |
+      При вводе ключевого слова отображаются только товары, находящиеся на первой странице магазина. При просмотре запроса в Devtools Network POST-запрос возвращает пустой список.
+
+test-cases:
+  - summary: |
+     Поиск товара по категории
+    status: pass
+  - summary: |
+     Поиск товара по категории
+    status: pass
+
+bugreports: []
+
+test-cases:
+  - summary: |
+    Поиск товара по ключевому слову внутри категории
+  status: fail 
+
+  - summary: |
+    Поиск товара по ключевому слову внутри категории
+  status: fail 
+  
+bugreports:
+  - summary: |
+      При вводе ключевого слова отображаются только товары, находящиеся на первой странице магазина
+    environment: |
+      Google Chrome   Версия 114.0.5735.199 (Официальная сборка), (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: |
+     1. Зайти на страницу сайта https://hexlet-products-store.vercel.app/ Хекслет Магазин
+     2. Выбрать из списка категорию, например, Мебель
+     3. Набрать в поле поиска ключевое слово, например, стол
+    expected-result: |
+      На странице сайта отображаются товары из выбранной категории и содержащие в названии или описании ключевое слово
+    actual-result: |
+      На странице сайта отображаются все товары, размещенные на странице. При просмотре запроса в Devtools Network POST-запрос возвращает пустой список.
+
+test-cases:
+  - summary: |
+     Фильтр товаров по бренду
+   status: pass    
+   - summary: |
+     Фильтр товаров по бренду
+   status: pass
+
+bugreports: []
+
+test-cases:
+  - summary: |
+     Фильтр товаров по цене
+   status: pass    
+   - summary: |
+     Фильтр товаров по цене
+   status: pass
+       
+bugreports: []
+
+test-cases:
+  - summary: |
+     Просмотр товаров
+   status: pass    
+   - summary: |
+     Просмотр товаров
+   status: pass
+       
+bugreports: []
+
+test-cases:
+  - summary: |
+     Просмотр подробной информации о товаре
+   status: pass    
+   - summary: |
+     Просмотр подробной информации о товаре 
+   status: pass
+       
+bugreports: []
+
+test-cases:
+  - summary: |
+      Добавление товара в корзину
+   status: pass    
+   - summary: |
+      Добавление товара в корзину 
+   status: pass
+       
+bugreports: []
+
+test-cases:
+  - summary: |
+      Просмотр содержимого корзины
+   status: pass    
+   - summary: |
+      Просмотр содержимого корзины
+   status: pass
+       
+bugreports: []
