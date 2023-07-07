@@ -1,128 +1,99 @@
-test-cases:
+- test-cases:
   - summary: |
      Поиск товара по ключевому слову 
     status: fail
 
-  - summary: |
-      Поиск товара по ключевому слову
-    status: fail
+- bugreports: [] 
 
-bugreports:
-  - summary: |
-      При вводе ключевого слова отображаются только товары, находящиеся на первой странице магазина
-    environment: |
-      Google Chrome   Версия 114.0.5735.199 (Официальная сборка), (64 бит)
-      ОС Windows 10
-    steps-to-reproduce: |
-     1. Зайти на страницу сайта https://hexlet-products-store.vercel.app/ Хекслет Магазин
-     2. Набрать в поле поиска ключевое слово, например, телефон
-    expected-result: |
-      На странице магазина отображается список товаров, в названии или описании которых содержится ключевое слово
-    actual-result: |
-      При вводе ключевого слова отображаются только товары, находящиеся на первой странице магазина. При просмотре запроса в Devtools Network POST-запрос возвращает пустой список.
-
-test-cases:
+- test-cases:
   - summary: |
      Поиск товара по категории
     status: pass
 
-  - summary: |
-     Поиск товара по категории
-    status: pass
+- bugreports: []
 
-bugreports: []
-
-test-cases:
+- test-cases:
   - summary: |
      Поиск товара по ключевому слову внутри категории
-  status: fail 
-
-  - summary: |
-     Поиск товара по ключевому слову внутри категории
-  status: fail 
+    status: fail  
   
-bugreports:
+- bugreports: []
+ 
+- test-cases:
   - summary: |
-      При вводе ключевого слова отображаются только товары, находящиеся на первой странице магазина
+     Фильтр товаров по бренду
+    status: pass    
+  
+- bugreports: []
+
+- test-cases:
+  - summary: |
+     Фильтр товаров по цене
+    status: pass    
+  
+- bugreports: 
+      Не учитываются границы диапозона в фильтре по цене товара  
     environment: |
       Google Chrome   Версия 114.0.5735.199 (Официальная сборка), (64 бит)
       ОС Windows 10
     steps-to-reproduce: |
-      1. Зайти на страницу сайта https://hexlet-products-store.vercel.app/ Хекслет Магазин
-      2. Выбрать из списка категорию, например, Мебель
-      3. Набрать в поле поиска ключевое слово, например, стол
+      1. Зайти на страницу сайта https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ Хекслет Магазин
+      2. Выбрать поле минимальной цены товара
+      3. Ввести значение, например 25
+      4. Выбрать поле максимальной цены товары
+      5. Ввести значение, например 1254
     expected-result: |
-      На странице сайта отображаются товары из выбранной категории и содержащие в названии или описании ключевое слово
+      На странице сайта отображаются товары, находящиеся внутри выбранного ценового диапазона
     actual-result: |
-      На странице сайта отображаются все товары, размещенные на странице. При просмотре запроса в Devtools Network POST-запрос возвращает пустой список.
+      На странице сайта отображаются все товары, размещенные на странице. При просмотре запроса в Devtools Network POST-
 
-test-cases:
-  - summary: |
-     Фильтр товаров по бренду
-   status: pass    
-   
-  - summary: |
-     Фильтр товаров по бренду
-   status: pass
-
-bugreports: 
-     []
-
-test-cases:
-  - summary: |
-     Фильтр товаров по цене
-   status: pass    
-  
-  - summary: |
-     Фильтр товаров по цене
-   status: pass
-       
-bugreports: 
-     []
-
-test-cases:
+- test-cases:
   - summary: |
      Просмотр товаров
-   status: pass    
+    status: pass    
   
-  - summary: |
-     Просмотр товаров
-   status: pass
-       
-bugreports: 
-     []
-
-test-cases:
+- bugreports: []
+ 
+- test-cases:
   - summary: |
      Просмотр подробной информации о товаре
-   status: pass    
+    status: pass    
    
-  - summary: |
-     Просмотр подробной информации о товаре 
-   status: pass
-       
-bugreports: 
-     []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
      Добавление товара в корзину
-   status: pass    
+    status: pass    
   
-  - summary: |
-     Добавление товара в корзину 
-   status: pass
-       
-bugreports: 
-     []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
      Просмотр содержимого корзины
-   status: pass    
+    status: pass    
   
+- bugreports:  []
+
+- test-cases:
   - summary: |
-     Просмотр содержимого корзины
-   status: pass
-       
-bugreports:  []
+      Корректировка количества товара в корзине
+    status: fail    
+  
+- bugreports:  
+- summary: |
+      Невозможно увеличить количество товара в корзине, находясь внутри нее
+    environment: |
+      Google Chrome   Версия 114.0.5735.199 (Официальная сборка), (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: |
+     1. Зайти на страницу сайта https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ Хекслет Магазин
+     2. Выбрать из каталога товар
+     3. Положить товар в корзину
+     4. Перейти в корзину
+     5. Увеличить количество товара с помощью функциональной кнопки
+     expected-result: |
+      Есть возможность учеличить количество товара в корзине, находясь внутри нее
+    actual-result: |
+      Невозможно увеличить количество товара в корзине, находясь внутри нее. Нет функциональной кнопки.  
+
