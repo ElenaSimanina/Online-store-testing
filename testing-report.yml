@@ -20,11 +20,7 @@
   status: fail
   
 - summary: |
-     Просмотр товаров
-  status: pass
-
-- summary: |
-     Просмотр подробной информации о товаре
+     Проверка открытия карточки товара
   status: pass
 
 - summary: 
