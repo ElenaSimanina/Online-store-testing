@@ -1,7 +1,7 @@
 - test-cases:
   - summary: |
      Поиск товара по ключевому слову 
-    status: fail
+   status: fail
 
 - bugreports: 
   - summary: |
@@ -21,12 +21,12 @@
 - test-cases:
   - summary: |
      Поиск товара по категории
-    status: pass
+   status: pass
 
 - test-cases:
   - summary: |
      Поиск товара по ключевому слову внутри категории
-    status: fail  
+   status: fail  
   
 - bugreports: 
   - summary: |
@@ -47,87 +47,87 @@
 - test-cases:
   - summary: |
      Фильтр товаров по бренду
-    status: pass    
+   status: pass    
   
 - test-cases:
   - summary: |
      Фильтр товаров по цене
-    status: fail   
+   status: fail   
   
 - test-cases:
   - summary: |
      Просмотр товаров
-    status: pass    
+   status: pass    
   
 - test-cases:
   - summary: |
      Просмотр подробной информации о товаре
-    status: pass    
+   status: pass    
    
 - test-cases:
   - summary: |
      Успешное добавление товара в корзину
-    status: pass    
+   status: pass    
   
 - test-cases:
   - summary: |
      Просмотр содержимого корзины
-    status: pass    
+   status: pass    
   
 - test-cases:
   - summary: |
-      Корректировка количества товара в корзине
-    status: fail    
+     Корректировка количества товара в корзине
+   status: fail    
   
 - test-cases:
   - summary: |
-      Удаление товаров из корзины
-    status: pass 
+     Удаление товаров из корзины
+   status: pass 
   
 - test-cases:
   - summary: |
-      Очистка корзины после обновления страницы
-    status: fail 
+     Очистка корзины после обновления страницы
+   status: fail 
   
 - test-cases:
   - summary: |
-      Отображение видов товаров в категориях
-    status: fail 
+     Отображение видов товаров в категориях
+   status: fail 
   
 - test-cases:
   - summary: |
-      Отображение брендов товаров в списке
-    status: fail 
+     Отображение брендов товаров в списке
+   status: fail 
   
 - test-cases:
   - summary: |
-      Обновление страницы магазина
-    status: fail 
+     Обновление страницы магазина
+   status: fail 
   
 - test-cases:
   - summary: |
      Адаптивность сайта для разных разных мобильных устройств
-    status: fail 
+   status: fail 
   
 - test-cases:
   - summary: |
      Выбор максимальной цены товара
-    status: fail 
+   status: fail 
   
 - test-cases:
   - summary: |
      Ввод отрицательных чисел в поля цен товаров
-    status: fail 
+   status: fail 
   
 - test-cases:
   - summary: |
      Ввод cпециальных символов в поля цен товаров
-    status: fail 
+   status: fail 
   
 - test-cases:
   - summary: |
      Просмотр дополнительных фото товаров
-    status: passed
+   status: passed
   
 
 
