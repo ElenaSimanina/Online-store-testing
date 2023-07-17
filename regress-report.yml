@@ -23,8 +23,6 @@
      Поиск товара по категории
     status: pass
 
-- bugreports: []
-
 - test-cases:
   - summary: |
      Поиск товара по ключевому слову внутри категории
@@ -51,8 +49,6 @@
      Фильтр товаров по бренду
     status: pass    
   
-- bugreports: []
-
 - test-cases:
   - summary: |
      Фильтр товаров по цене
@@ -63,105 +59,77 @@
      Просмотр товаров
     status: pass    
   
-- bugreports: []
- 
 - test-cases:
   - summary: |
      Просмотр подробной информации о товаре
     status: pass    
    
-- bugreports: []
-
 - test-cases:
   - summary: |
      Успешное добавление товара в корзину
     status: pass    
   
-- bugreports: []
-
 - test-cases:
   - summary: |
      Просмотр содержимого корзины
     status: pass    
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
       Корректировка количества товара в корзине
     status: fail    
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
       Удаление товаров из корзины
     status: pass 
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
       Очистка корзины после обновления страницы
     status: fail 
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
       Отображение видов товаров в категориях
     status: fail 
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
       Отображение брендов товаров в списке
     status: fail 
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
       Обновление страницы магазина
     status: fail 
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
      Адаптивность сайта для разных разных мобильных устройств
     status: fail 
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
      Выбор максимальной цены товара
     status: fail 
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
      Ввод отрицательных чисел в поля цен товаров
     status: fail 
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
      Ввод cпециальных символов в поля цен товаров
     status: fail 
   
-- bugreports:  []
-
 - test-cases:
   - summary: |
      Просмотр дополнительных фото товаров
     status: passed
   
-- bugreports:  []
+
 
 
 
