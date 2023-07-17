@@ -4,6 +4,7 @@
     status: fail
 
 - bugreports: 
+
 - summary: |
      Не работает поиск товара по ключевому слову
   environment: |
@@ -31,6 +32,7 @@
     status: fail  
   
 - bugreports: 
+
 - summary: |
      Не работает поиск товара по ключевому слову внутри категории
   environment: |
