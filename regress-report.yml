@@ -81,7 +81,7 @@
 - test-cases:
   - summary: |
        Просмотр дополнительных фото товаров
-    status: passed
+    status: pass
 
 - bugreports: 
   - summary: |
