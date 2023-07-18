@@ -1,4 +1,5 @@
-test-cases:
+ ---
+ test-cases:
   - summary: |
        Поиск товара по ключевому слову 
     status: fail
@@ -71,7 +72,7 @@ test-cases:
        Просмотр дополнительных фото товаров
     status: passed
 
-bugreports: 
+ bugreports: 
   - summary: |
        Не работает поиск товара по ключевому слову
     environment: |
