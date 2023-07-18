@@ -1,90 +1,94 @@
----
-- test-cases:
+ test-cases:
   - summary: |
-     Поиск товара по ключевому слову 
+      Поиск товара по ключевому слову 
     status: fail
+
+ test-cases:
+  - summary: |
+      Краткое описание тест кейса. Пример: Проверка входа пользователя с существующими логином и паролем
+    status: pass   
    
-- test-cases:
+ test-cases:
   - summary: |
       Поиск товара по категории
     status: pass
 
-- test-cases:
+ test-cases:
   - summary: |
       Проверка фильтрации по ключевому слову и категории одновременно
     status: fail  
   
-- test-cases:
+ test-cases:
   - summary: |
       Проверка фильтра товаров по бренду
     status: pass    
   
-- test-cases:
+ test-cases:
   - summary: |
       Проверка фильтра товаров по цене
     status: fail   
      
-- test-cases:
+ test-cases:
   - summary: |
       Проверка открытия карточки товара
     status: pass    
    
-- test-cases:
+ test-cases:
   - summary: |
       Успешное добавление товара в корзину
     status: pass    
      
-- test-cases:
+ test-cases:
   - summary: |
       Просмотр содержимого корзины
     status: pass    
   
-- test-cases:
+ test-cases:
   - summary: |
       Корректировка количества товара в корзине
     status: fail    
   
-- test-cases:
+ test-cases:
   - summary: |
       Удаление товаров из корзины
     status: pass 
   
-- test-cases:
+ test-cases:
   - summary: |
       Проверка отображения видов товаров в категориях 
     status: fail 
   
-- test-cases:
+ test-cases:
   - summary: |
       Проверка отображения брендов товаров в списке 
     status: fail 
   
-- test-cases:
+ test-cases:
   - summary: |
       Обновление страницы магазина
     status: fail 
   
-- test-cases:
+ test-cases:
   - summary: |
       Проверка адаптивности сайта для разных разных мобильных устройств
     status: fail 
   
-- test-cases:
+ test-cases:
   - summary: |
       Ввод отрицательных чисел в поля цен товаров
     status: fail 
   
-- test-cases:
+ test-cases:
   - summary: |
       Ввод cпециальных символов в поля цен товаров
     status: fail 
   
-- test-cases:
+ test-cases:
   - summary: |
       Просмотр дополнительных фото товаров
     status: passed
 
-- bugreports: 
+ bugreports: 
   - summary: |
       Не работает поиск товара по ключевому слову
     environment: |
@@ -99,7 +103,7 @@
       Отображаются все товары, находящиеся на открытой странице (приложение Sreen bug поиск по ключевому слову 2.png)
       При просмотре запроса в Devtools Network POST-запрос ничего не возвращает (приложение Sreen bug поиск по ключевому слову 3.png )
   
-- bugreports:
+ bugreports:
   - summary: |
       Не работает фильтр по ключевому слову и категории одновременно
     environment: |
